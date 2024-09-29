@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A</title>
+    <meta property="og:title" content="Альберт жана Айзаданын тоюна чакыруу!" />
+    <meta
+      property="og:description"
+      content="Сизди Ала-Тоо ресторанында күтөбүз!"
+    />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/vDg2PKn/2024-09-29-15-55-11.png"
+    />
+    <meta property="og:url" content="https://albert-aizada.vercel.app/" />
+    <style>
+      .active {
+        text-decoration: underline;
+      }
+      .no-active {
+        text-decoration: none;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="lang">
+        <a href="./index.html" id="kg-link">кыргызча</a>
+        <a href="./ru.html" id="ru-link">орусча</a>
+      </div>
+      <h2>Тойго чакыруу</h2>
+      <div class="wife_and_husband">
+        <h2>&</h2>
+        <h1>
+          Альберт <br />
+          Айзада
+        </h1>
+      </div>
+      <h2 style="margin-bottom: 15px; margin-top: 5px">Урматтуу</h2>
+      <h2 style="margin-top: 10px; margin-bottom: 50px">
+        Кудайберген куда <br />& <br />
+        Калия кудагый
+      </h2>
+      <p>
+        Үйлонүү тоюна арналган салтанатка келип, <br />
+        кадырлуу коногубуз болууга чакырабыз!
+      </p>
+      <div class="date">
+        <span>25 октябрь 2024</span>
+        <h3>Тойдун ээлери</h3>
+        <h3>Женишбек & Гүлжамал</h3>
+      </div>
+      <img src="./heard.png" alt="heard" width="30" />
+    </header>
+
+    <section>
+      <h2>Маалымат</h2>
+      <!-- <h5 class="det">details</h5> -->
+      <div class="details_ivent">
+        <div class="details_ivent-first">
+          <div class="first_left">
+            <h3>Тойдун башталышы</h3>
+            <span
+              >"Ала-Тоо" той канасы Бишкек ш.,
+              <a href="https://go.2gis.com/q342y" target="_blank"
+                >Малдыбаева 54/1 көч.</a
+              ></span
+            >
+            <h4>Сураныч, шаардагы жол тыгындарды эске алыңыз!</h4>
+          </div>
+          <hr />
+          <h4>17:00</h4>
+        </div>
+        <img src="./5191439.png" alt="location" width="30" />
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770.140685500086!2d74.59997838487627!3d42.82774426593418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7002287f6c5%3A0xea6444b5e53d7b09!2sAla-Too%20restaurant!5e0!3m2!1sru!2skg!4v1727591170218!5m2!1sru!2skg"
+        width="370"
+        height="370"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section>
+      <h2>
+        Коноктун <br />
+        анкетасы
+      </h2>
+      <!-- <h5 class="det">guest</h5> -->
+      <div class="guest_card">
+        <span>Сураныч, катышууңузду ырастаңыз</span>
+        <form>
+          <input type="text" placeholder="Атыныз" name="name" required />
+          <input
+            type="text"
+            placeholder="Фамилияңыз"
+            name="lastName"
+            required
+          />
+          <div class="come_ivent">
+            <p>Үйлөнүү тоюна келесизби?</p>
+            <label
+              ><input type="radio" name="answer" value="Приду" required />
+              Ооба</label
+            >
+            <label
+              ><input type="radio" name="answer" value="Не смогу" required />
+              Жок</label
+            >
+          </div>
+          <button type="submit">Жөнөтүү</button>
+          <span id="check_guest"></span>
+          <div class="loader1"></div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2 id="h2foot">Тойго</h2>
+      <!-- <h5 class="det">before</h5> -->
+      <div class="countdown">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span class="label">Күн</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span class="label">Саат</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span class="label">Мүнөт</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span class="label">Секунда</span>
+        </div>
+      </div>
+      <h2>калды!</h2>
+      <div class="block_line_time">
+        <hr id="line_time" />
+      </div>
+    </section>
+
+    <footer>a & a</footer>
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      // Если на странице с кыргызским, подчеркиваем ссылку на кыргызский
+      document.getElementById("kg-link").classList.add("active");
+      document.getElementById("ru-link").classList.add("no-active");
+    </script>
+  </body>
+</html>

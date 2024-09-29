@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>A&A</title>
+    <meta
+      property="og:title"
+      content="Приглашение на свадьбу Альберта и Айзады"
+    />
+    <meta property="og:description" content="Ждём вас у нас на свадьбе!" />
+    <meta
+      property="og:image"
+      content="https://i.ibb.co/vDg2PKn/2024-09-29-15-55-11.png"
+    />
+    <meta property="og:url" content="https://albert-aizada.vercel.app/" />
+    <style>
+      .active {
+        text-decoration: underline;
+      }
+      .no-active {
+        text-decoration: none;
+      }
+    </style>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400..700&family=Great+Vibes&family=Noto+Serif+Display:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap&family=Playfair+Display:ital,wght@0,400..900;1,400..900&display=swap&family=Comfortaa:wght@300..700&family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="./style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="lang">
+        <a href="./index.html" id="kg-link">кыргызский</a>
+        <a href="./ru.html" id="ru-link">русский</a>
+      </div>
+      <h2>Приглашение на свадьбу</h2>
+      <div class="wife_and_husband">
+        <h2>&</h2>
+        <h1>
+          Альберт <br />
+          Айзада
+        </h1>
+      </div>
+      <h2 style="margin-bottom: 15px; margin-top: 5px">Уважаемые</h2>
+      <h2 style="margin-top: 10px; margin-bottom: 50px">
+        Кудайберген куда <br />& <br />
+        Калия кудагый
+      </h2>
+      <p>
+        Будем очень счастливы разделить радость <br />
+        этого прекрасного события вместе с вами!
+      </p>
+      <div class="date">
+        <span>25 октября 2024</span>
+        <h3>Хозяева торжества</h3>
+        <h3>Женишбек & Гулжамал</h3>
+      </div>
+      <img src="./heard.png" alt="heard" width="30" />
+    </header>
+
+    <section>
+      <h2>Детали</h2>
+      <h5 class="det">details</h5>
+      <div class="details_ivent">
+        <div class="details_ivent-first">
+          <div class="first_left">
+            <h3>Начало мероприятия</h3>
+            <span
+              >Ресторан "Ала-Тоо" г.Бишкек,
+              <a href="https://go.2gis.com/q342y" target="_blank"
+                >ул. Малдыбаева 54/1</a
+              ></span
+            >
+            <h4>Пожалуйста, учитывайте время пробок в городе!</h4>
+          </div>
+          <hr />
+          <h4>17:00</h4>
+        </div>
+        <img src="./5191439.png" alt="location" width="30" />
+      </div>
+      <iframe
+        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d770.140685500086!2d74.59997838487627!3d42.82774426593418!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x389eb7002287f6c5%3A0xea6444b5e53d7b09!2sAla-Too%20restaurant!5e0!3m2!1sru!2skg!4v1727591170218!5m2!1sru!2skg"
+        width="370"
+        height="370"
+        style="border: 0"
+        allowfullscreen=""
+        loading="lazy"
+        referrerpolicy="no-referrer-when-downgrade"
+      ></iframe>
+    </section>
+
+    <section>
+      <h2>Анкета гостя</h2>
+      <h5 class="det">guest</h5>
+      <div class="guest_card">
+        <span>Пожалуйста, подтвердите свое присутствие </span>
+        <form>
+          <input type="text" placeholder="Ваше имя" name="name" required />
+          <input
+            type="text"
+            placeholder="Ваше фамилия"
+            name="lastName"
+            required
+          />
+          <div class="come_ivent">
+            <p>Подтверждение присутствия</p>
+            <label
+              ><input type="radio" name="answer" value="Приду" required />
+              Приду</label
+            >
+            <label
+              ><input type="radio" name="answer" value="Не смогу" required /> Не
+              смогу</label
+            >
+          </div>
+          <button type="submit">Отправить</button>
+          <span id="check_guest"></span>
+          <div class="loader1"></div>
+        </form>
+      </div>
+    </section>
+
+    <section>
+      <h2>До свадьбы осталось!</h2>
+      <h5 class="det">before</h5>
+      <div class="countdown">
+        <div class="countdown-item">
+          <span id="days">00</span>
+          <span class="label">Дней</span>
+        </div>
+        <div class="countdown-item">
+          <span id="hours">00</span>
+          <span class="label">Часов</span>
+        </div>
+        <div class="countdown-item">
+          <span id="minutes">00</span>
+          <span class="label">Минут</span>
+        </div>
+        <div class="countdown-item">
+          <span id="seconds">00</span>
+          <span class="label">Секунд</span>
+        </div>
+      </div>
+      <div class="block_line_time">
+        <hr id="line_time" />
+      </div>
+    </section>
+
+    <footer>a & a</footer>
+    <script src="https://cdn.webrtc-experiment.com/RecordRTC.js"></script>
+    <script src="./main.js"></script>
+    <script>
+      // Если на странице с кыргызским, подчеркиваем ссылку на кыргызский
+      document.getElementById("ru-link").classList.add("active");
+      document.getElementById("kg-link").classList.add("no-active");
+    </script>
+  </body>
+</html>
